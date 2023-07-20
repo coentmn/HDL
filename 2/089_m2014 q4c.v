@@ -1,7 +1,7 @@
 module top_module (
     input clk,
     input d, 
-    input r,   // synchronous reset
+    input r,   // synchronous reset-同步复位
     output q);
     
     always @(posedge clk) begin
