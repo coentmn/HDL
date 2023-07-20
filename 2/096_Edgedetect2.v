@@ -5,7 +5,7 @@ module top_module (
 );
     
     integer i;
-    reg [7:0] in_tmp;
+    reg [7:0] in_tmp = 0;
     always @(posedge clk) begin
         for(i = 0; i < 8; i = i + 1) begin
             if(in_tmp[i] != in[i]) begin
